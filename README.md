@@ -5,7 +5,7 @@ ragnaMOBA
 
 #### Introdução
 
-O ragnaMOBA é uma versão modificada do Cronus-Emulator [link](https://github.com/Cronus-Emulator/Cronus) para funcionar como um MOBA.
+O ragnaMOBA é uma versão modificada do Cronus-Emulator [[link](https://github.com/Cronus-Emulator/Cronus)] para funcionar como um MOBA.
 
 Qualquer bug encontrado deve ser postado em: https://github.com/aleDsz/ragnaMOBA/issues
 
@@ -14,7 +14,7 @@ Qualquer bug encontrado deve ser postado em: https://github.com/aleDsz/ragnaMOBA
 
 ###### Windows
 - Versões: Windows XP SP3 ~ Windows 10.
-- Compilador: http://download.microsoft.com/download/1/D/9/1D9A6C0E-FC89-43EE-9658-B9F0E3A76983/vc_web.exe
+- Compilador: [link](http://download.microsoft.com/download/1/D/9/1D9A6C0E-FC89-43EE-9658-B9F0E3A76983/vc_web.exe)
 
 ===============
 

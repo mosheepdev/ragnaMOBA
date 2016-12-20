@@ -125,7 +125,7 @@
 
 #define MAX_INVENTORY 100
 //Max number of characters per account. Note that changing this setting alone is not enough if the client is not hexed to support more characters as well.
-#define MAX_CHARS 9
+#define MAX_CHARS 32
 //Number of slots carded equipment can have. Never set to less than 4 as they are also used to keep the data of forged items/equipment. [Skotlex]
 //Note: The client seems unable to receive data for more than 4 slots due to all related packets having a fixed size.
 #define MAX_SLOTS 4
@@ -136,7 +136,7 @@
 //Official Limit: 2.1b ( the var that stores the money doesn't go much higher than this by default )
 #define MAX_BANK_ZENY INT_MAX
 
-#define MAX_LEVEL 175
+#define MAX_LEVEL 999
 #define MAX_FAME 1000000000
 #define MAX_CART 100
 #define MAX_SKILL 1478
@@ -148,7 +148,7 @@
 #define MAX_WALK_SPEED 1000
 #define MAX_STORAGE 600
 #define MAX_GUILD_STORAGE 600
-#define MAX_PARTY 12
+#define MAX_PARTY 60
 #define BASE_GUILD_SIZE 16               // Base guild members (without GD_EXTENSION)
 #define MAX_GUILD (BASE_GUILD_SIZE+10*6) // Increased max guild members +6 per 1 extension levels [Lupus]
 #define MAX_GUILDPOSITION 20             // Increased max guild positions to accomodate for all members [Valaris] (removed) [PoW]

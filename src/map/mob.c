@@ -875,8 +875,8 @@ int mob_setdelayspawn(struct mob_data *md)
 		return unit->free(&md->bl,CLR_DEAD);
 
 	spawntime = md->spawn->delay1; //Base respawn time
-	if (md->spawn->delay2) //random variance
-		spawntime+= rnd()%md->spawn->delay2;
+	//if (md->spawn->delay2) //random variance
+	//	spawntime+= rnd()%md->spawn->delay2;
 
 	//Apply the spawn delay fix [Skotlex]
 	db = mob->db(md->spawn->class_);
