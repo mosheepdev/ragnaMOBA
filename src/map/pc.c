@@ -6416,9 +6416,10 @@ int pc_checkbaselevelup(struct map_session_data *sd) {
 		if(!battle_config.multi_level_up && sd->status.base_exp > next-1)
 			sd->status.base_exp = next-1;
 
-		next = pc->gets_status_point(sd->status.base_level);
-		sd->status.base_level ++;
-		sd->status.status_point += next;
+		//next = pc->gets_status_point(sd->status.base_level);
+		sd->status.base_level++;
+		sd->status.job_level++;
+		//sd->status.status_point += next;
 
 	} while ((next=pc->nextbaseexp(sd)) > 0 && sd->status.base_exp >= next);
 
