@@ -1,0 +1,91 @@
+﻿//===============================================================\\
+//        _________                                              ||
+//        \_   ___ \_______  ____   ____  __ __  ______          ||
+//        /    \  \/\_  __ \/  _ \ /    \|  |  \/  ___/          ||
+//        \     \____|  | \(  <_> )   |  \  |  /\___ \           ||
+//         \______  /|__|   \____/|___|  /____//____  >          ||
+//                \/                   \/           \/           ||
+//                                                               ||
+//===============================================================||
+// = Nome do NPC:                                                ||
+// - moba_core.txt                                               ||
+//===============================================================||
+// = Criação:                                                    ||
+// - Cronus                                                      ||
+//===============================================================||
+// = Versão:                                                     ||
+// - 1.0                                                         ||
+//===============================================================||
+// = Descrição:                                                  ||
+// - Núcleo da Instância do MOBA                                 ||
+//===============================================================||
+// = Observações:                                                ||
+// - Equipe vencedora - 100 MOBA Points                          ||
+// - Equipe perderora -  10 MOBA Points                          ||
+//===============================================================//
+
+
+-	script	MOBA_CORE	-1,{
+	end;
+
+	OnWin:
+		##moba_points += 100;
+		warp "dicastes01",198,187;
+		end;
+
+	OnLose:
+		##moba_points += 10;
+		warp "dicastes01",198,187;
+		end;
+}
+
+//===============================================================\\
+// - Mapflag                                                     ||
+//===============================================================//
+arathi	mapflag	nowarp
+arathi	mapflag	nowarpto
+arathi	mapflag	nomemo
+arathi	mapflag	nosave
+arathi	mapflag	battleground	2
+arathi	mapflag	noreturn
+arathi	mapflag	noteleport
+
+arathi02	mapflag	nowarp
+arathi02	mapflag	nowarpto
+arathi02	mapflag	nomemo
+arathi02	mapflag	nosave
+arathi02	mapflag	battleground	2
+arathi02	mapflag	noreturn
+arathi02	mapflag	noteleport
+
+arathi03	mapflag	nowarp
+arathi03	mapflag	nowarpto
+arathi03	mapflag	nomemo
+arathi03	mapflag	nosave
+arathi03	mapflag	battleground	2
+arathi03	mapflag	noreturn
+arathi03	mapflag	noteleport
+
+arathi04	mapflag	nowarp
+arathi04	mapflag	nowarpto
+arathi04	mapflag	nomemo
+arathi04	mapflag	nosave
+arathi04	mapflag	battleground	2
+arathi04	mapflag	noreturn
+arathi04	mapflag	noteleport
+
+arathi05	mapflag	nowarp
+arathi05	mapflag	nowarpto
+arathi05	mapflag	nomemo
+arathi05	mapflag	nosave
+arathi05	mapflag	battleground	2
+arathi05	mapflag	noreturn
+arathi05	mapflag	noteleport
+
+arathi06	mapflag	nowarp
+arathi06	mapflag	nowarpto
+arathi06	mapflag	nomemo
+arathi06	mapflag	nosave
+arathi06	mapflag	battleground	2
+arathi06	mapflag	noreturn
+arathi06	mapflag	noteleport

@@ -58,11 +58,11 @@
 /// Modo renovação - Taxa de experiência
 /// Quando ativado, as taxas de experiência sofrem uma modificação de acordo com a diferença entre o nível do personagem ~ nível do monstro
 ///Informações em http://browiki.org/wiki/Experi%C3%AAncia
-// #define RENEWAL_EXP
+#define RENEWAL_EXP
 
 /// Modo renovação - Modificadores de dano
 /// Quando ativado, o nível base afeta o dano de algumas habilidades
-// #define RENEWAL_LVDMG
+#define RENEWAL_LVDMG
 
 /// Modo renovação - EDP
 /// Quando ativado:

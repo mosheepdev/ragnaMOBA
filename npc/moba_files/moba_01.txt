@@ -1,0 +1,58 @@
+//===============================================================\\
+//        _________                                              ||
+//        \_   ___ \_______  ____   ____  __ __  ______          ||
+//        /    \  \/\_  __ \/  _ \ /    \|  |  \/  ___/          ||
+//        \     \____|  | \(  <_> )   |  \  |  /\___ \           ||
+//         \______  /|__|   \____/|___|  /____//____  >          ||
+//                \/                   \/           \/           ||
+//                                                               ||
+//===============================================================||
+// = Nome do NPC:                                                ||
+// - moba_01.txt                                                 ||
+//===============================================================||
+// = Criação:                                                    ||
+// - Cronus                                                      ||
+//===============================================================||
+// = Versão:                                                     ||
+// - 1.0                                                         ||
+//===============================================================||
+// = Descrição:                                                  ||
+// - Instância do MOBA em arathi                                 ||
+//===============================================================||
+// = Observações:                                                ||
+// - Equipe vencedora - 5 emblemas                               ||
+//===============================================================//
+
+
+-	script	MOBA01_Red	-1,{
+	end;
+
+	OnEnable:
+		bg_monster $@RedTeam01,"arathi",168,29,"Nexus Vermelho",1907,"MOBA01_Red::OnNexusDestroy";
+		end;
+
+	OnNexusDestroy:
+		if (mobcount("arathi","MOBA01_Red::OnNexusDestroy") < 1) {
+			mapannounce "arathi", "O Nexus do time vermelho foi destruído.",bc_map,"0xFFCE00";
+
+			if ($@BlueTeam01 > 0) {
+				$@MOBA01_Victory = 2;
+				++$@BlueTeam01;
+				enablenpc "Armada de Guillaume#b01_a";
+				enablenpc "Armada de Croix#b01_b";
+				donpcevent "time#arathi::OnStop";
+			} else {
+				$@BlueTeam01 = 1;
+				donpcevent "time#arathi::OnEnable";
+				donpcevent "start#arathi::OnReset";
+			}
+
+			donpcevent "#arathi_timer::OnStop";
+			bg_updatescore "arathi",$@BlueTeam_ScoreMOBA01,$@BlueTeam01;
+			bg_warp $@MOBA01_RedTeam,"arathi",130,48;
+			bg_warp $@arathi_,"arathi",88,48;
+			donpcevent "#arathi_OnEnable";
+		}
+		end;
+
+}

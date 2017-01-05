@@ -1003,3 +1003,18 @@ c_tower3_
 //
 //mymap	1250
 //mymap-2
+
+lava_pvp 1250
+Farebury
+league
+dominic02
+dominic03
+dominic04
+dominic05
+dominic06
+arathi
+arathi02
+arathi03
+arathi04
+arathi05
+arathi06
